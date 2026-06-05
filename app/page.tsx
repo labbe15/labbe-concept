@@ -10,16 +10,6 @@ import FadeUp from "@/components/FadeUp";
 export default function Home() {
   return (
     <>
-      {/* ── INTRO OVERLAY (CSS-only, SSR-safe) ───────────────── */}
-      <div className="intro-overlay" aria-hidden="true">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.png" className="intro-logo" alt="" />
-        <div style={{ textAlign: "center" }}>
-          <div className="intro-title">LABBE CONCEPT</div>
-          <div className="intro-tagline">Fermetures &amp; Aménagements</div>
-        </div>
-      </div>
-
       {/* ── HERO ──────────────────────────────────────────────── */}
       <section className="relative" style={{ height: "100svh", minHeight: "600px" }}>
         <Image

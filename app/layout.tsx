@@ -3,6 +3,7 @@ import { DM_Serif_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageIntro from "@/components/PageIntro";
 import { defaultMetadata } from "@/lib/seo";
 
 const dmSerifDisplay = DM_Serif_Display({
@@ -58,11 +59,17 @@ export default function RootLayout({
     >
       <head>
         <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{if(!sessionStorage.getItem('lc_intro_done')){document.documentElement.style.visibility='hidden';}}catch(e){}})();`,
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        <PageIntro />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
