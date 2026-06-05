@@ -10,6 +10,48 @@ import FadeUp from "@/components/FadeUp";
 export default function Home() {
   return (
     <>
+      {/* ── INTRO OVERLAY ────────────────────────────────────── */}
+      <div
+        id="lc-intro"
+        aria-hidden="true"
+        style={{
+          position: "fixed", inset: 0, zIndex: 9999,
+          background: "#fef8e6", display: "flex",
+          flexDirection: "column", alignItems: "center",
+          justifyContent: "center", gap: "20px",
+          animation: "introAnim 1.7s ease forwards",
+          pointerEvents: "none",
+        }}
+      >
+        <script dangerouslySetInnerHTML={{ __html: `
+    try{
+      if(sessionStorage.getItem('lc_intro_done')){
+        document.getElementById('lc-intro').style.display='none';
+      }else{
+        setTimeout(function(){
+          sessionStorage.setItem('lc_intro_done','1');
+        },1700);
+      }
+    }catch(e){}
+  ` }} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.png" width={100} height={100}
+          style={{ objectFit: "contain" }} alt="" />
+        <div style={{ textAlign: "center" }}>
+          <div style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: "28px", fontWeight: 700,
+            color: "#5a5c51", letterSpacing: "0.1em",
+            textTransform: "uppercase",
+          }}>LABBE CONCEPT</div>
+          <div style={{
+            fontFamily: "'DM Serif Display',serif",
+            fontStyle: "italic", fontSize: "16px",
+            color: "#c9924f", marginTop: "8px",
+          }}>Fermetures &amp; Aménagements</div>
+        </div>
+      </div>
+
       {/* ── HERO ──────────────────────────────────────────────── */}
       <section className="relative" style={{ height: "100svh", minHeight: "600px" }}>
         <Image
