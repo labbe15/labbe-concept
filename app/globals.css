@@ -38,6 +38,11 @@
   }
 }
 
+/* ─── Page intro lock ──────────────────────────────────────────── */
+html.intro-active {
+  overflow: hidden;
+}
+
 /* ─── Global resets / base ──────────────────────────────────────── */
 *,
 *::before,

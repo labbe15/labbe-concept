@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/data";
 
@@ -9,13 +10,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 pb-12 border-b border-white/10">
           {/* Col 1 — Brand */}
           <div>
-            <div className="mb-4">
-              <p className="font-sans font-bold text-[13px] tracking-[0.2em] uppercase text-white">
-                LABBE CONCEPT
-              </p>
-              <p className="font-serif italic text-[12px] text-caramel mt-0.5">
-                Fermetures & Aménagements
-              </p>
+            <div className="flex items-center gap-[10px] mb-4">
+              <Image
+                src="/logo.png"
+                width={36}
+                height={36}
+                alt="Labbe Concept"
+                className="object-contain"
+                unoptimized
+              />
+              <div>
+                <p className="font-sans font-bold text-[13px] tracking-[0.2em] uppercase text-white">
+                  LABBE CONCEPT
+                </p>
+                <p className="font-serif italic text-[12px] text-caramel mt-0.5">
+                  Fermetures & Aménagements
+                </p>
+              </div>
             </div>
             <p className="font-sans text-[14px] leading-relaxed mt-4 max-w-[260px]">
               Artisan menuisier poseur indépendant basé dans le Tarn. Fenêtres,

@@ -47,20 +47,21 @@ export default function Navbar() {
           >
             <Image
               src="/logo.png"
-              width={40}
-              height={40}
+              width={44}
+              height={44}
               alt="Labbe Concept"
               className="object-contain"
+              unoptimized
             />
             <div className="flex flex-col gap-0.5 leading-none">
               <span
-                className={`font-sans font-bold text-[16px] tracking-[0.2em] uppercase transition-colors duration-300 ${
+                className={`font-sans font-bold text-[18px] tracking-[0.2em] uppercase transition-colors duration-300 ${
                   isLight ? "text-dark" : "text-white"
                 }`}
               >
                 LABBE CONCEPT
               </span>
-              <span className="font-serif italic text-[12px] text-caramel">
+              <span className="font-serif italic text-[13px] text-caramel">
                 Fermetures & Aménagements
               </span>
             </div>
@@ -75,7 +76,7 @@ export default function Navbar() {
               onMouseLeave={() => setServicesOpen(false)}
             >
               <button
-                className={`text-[15px] font-sans transition-colors duration-200 cursor-pointer ${
+                className={`text-[16px] font-sans font-medium transition-colors duration-200 cursor-pointer ${
                   isLight
                     ? "text-dark hover:text-warm-green"
                     : "text-white/90 hover:text-warm-green"
@@ -112,7 +113,7 @@ export default function Navbar() {
 
             <Link
               href="/realisations"
-              className={`text-[15px] font-sans transition-colors duration-200 ${
+              className={`text-[16px] font-sans font-medium transition-colors duration-200 ${
                 isLight
                   ? "text-dark hover:text-warm-green"
                   : "text-white/90 hover:text-warm-green"
@@ -123,7 +124,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className={`text-[15px] font-sans transition-colors duration-200 ${
+              className={`text-[16px] font-sans font-medium transition-colors duration-200 ${
                 isLight
                   ? "text-dark hover:text-warm-green"
                   : "text-white/90 hover:text-warm-green"
@@ -134,7 +135,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="btn-caramel !text-[14px] !py-3 !px-6"
+              className="btn-caramel !text-[15px] !py-[12px] !px-[24px]"
               style={{ letterSpacing: "0.06em" }}
             >
               Devis gratuit
