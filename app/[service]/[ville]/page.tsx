@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { SERVICES, VILLES } from "@/lib/data";
 import { generateLocalMetadata } from "@/lib/seo";
+import LocalContactForm from "@/components/LocalContactForm";
 
 type Params = Promise<{ service: string; ville: string }>;
 
@@ -33,7 +34,6 @@ export default async function LocalPage({ params }: { params: Params }) {
 
   if (!service || !ville) notFound();
 
-  // Nearby cities (exclude current ville)
   const nearbyCities = VILLES.filter((v) => v.slug !== ville.slug).slice(0, 6);
 
   const schemaOrg = {
@@ -101,6 +101,54 @@ export default async function LocalPage({ params }: { params: Params }) {
         </div>
       </section>
 
+      {/* ── Bandeau contact rapide ───────────────────────────── */}
+      <div
+        style={{
+          background: "#fef8e6",
+          borderBottom: "1px solid #d7c8b3",
+          padding: "16px 24px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "12px",
+        }}
+      >
+        <p className="font-sans text-[14px] text-dark">
+          Intervention à {ville.name} · Devis gratuit sous 48h
+        </p>
+        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+          <a
+            href="tel:0661706344"
+            className="font-sans text-[13px] font-medium"
+            style={{
+              background: "#5a5c51",
+              color: "white",
+              borderRadius: "2px",
+              padding: "10px 18px",
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+            }}
+          >
+            06 61 70 63 44
+          </a>
+          <Link
+            href="/contact"
+            className="font-sans text-[13px] font-medium"
+            style={{
+              background: "#c9924f",
+              color: "white",
+              borderRadius: "2px",
+              padding: "10px 18px",
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Demander un devis
+          </Link>
+        </div>
+      </div>
+
       {/* ── Intro text ───────────────────────────────────────── */}
       <section className="py-16 md:py-20 bg-white px-6 md:px-10">
         <div className="max-w-screen-xl mx-auto">
@@ -147,6 +195,45 @@ export default async function LocalPage({ params }: { params: Params }) {
                 fournis.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Encart de réassurance ────────────────────────────── */}
+      <section className="pb-14 bg-white px-6 md:px-10">
+        <div className="max-w-screen-xl mx-auto">
+          <div
+            className="max-w-[720px]"
+            style={{
+              background: "#faf8f4",
+              borderRadius: "8px",
+              padding: "24px",
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "16px",
+              textAlign: "center",
+            }}
+          >
+            {[
+              { value: "15 ans", label: "d'expérience" },
+              { value: "Tarn (81)", label: "zone d'intervention" },
+              { value: "Garantie", label: "décennale" },
+            ].map(({ value, label }) => (
+              <div key={label}>
+                <p
+                  className="font-serif text-dark"
+                  style={{ fontSize: "24px", lineHeight: 1.1 }}
+                >
+                  {value}
+                </p>
+                <p
+                  className="font-sans uppercase text-caramel"
+                  style={{ fontSize: "12px", letterSpacing: "0.12em", marginTop: "6px" }}
+                >
+                  {label}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -204,21 +291,25 @@ export default async function LocalPage({ params }: { params: Params }) {
         </div>
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────── */}
-      <section className="py-14 bg-beige text-center px-6">
-        <p className="eyebrow mb-3">Gratuit &amp; sans engagement</p>
-        <h2
-          className="font-serif text-dark leading-tight mb-6"
-          style={{ fontSize: "clamp(26px, 3vw, 38px)" }}
-        >
-          Un projet de {service.shortName} à {ville.name}&nbsp;?
-        </h2>
-        <p className="font-sans text-[14px] text-dark/60 mb-8 max-w-sm mx-auto">
-          Contactez-moi pour un devis gratuit — réponse sous 48&nbsp;heures.
-        </p>
-        <Link href="/contact" className="btn-caramel">
-          Demander un devis
-        </Link>
+      {/* ── Mini formulaire de contact ───────────────────────── */}
+      <section className="py-16 md:py-24 bg-beige px-6 md:px-10">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="max-w-[600px] mx-auto">
+            <h2
+              className="font-serif text-dark leading-tight mb-3"
+              style={{ fontSize: "clamp(26px, 3vw, 32px)" }}
+            >
+              Un projet à {ville.name}&nbsp;?
+            </h2>
+            <p className="font-sans text-[14px] text-dark/60 mb-10">
+              Réponse sous 48h, déplacement gratuit.
+            </p>
+            <LocalContactForm
+              villeName={ville.name}
+              preselectedService={service.slug}
+            />
+          </div>
+        </div>
       </section>
     </>
   );
