@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SERVICES } from "@/lib/data";
@@ -42,16 +41,16 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-[10px]"
+            className="flex items-center gap-3"
             onClick={() => setMobileOpen(false)}
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/logo.png"
               width={44}
               height={44}
               alt="Labbe Concept"
-              className="object-contain"
-              unoptimized
+              style={{ objectFit: "contain" }}
             />
             <div className="flex flex-col gap-0.5 leading-none">
               <span
