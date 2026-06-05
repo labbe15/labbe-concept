@@ -59,6 +59,11 @@ export default function RootLayout({
     >
       <head>
         <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){if(!sessionStorage.getItem('lc_intro')){document.documentElement.classList.add('intro-active');}})();`,
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
         />
