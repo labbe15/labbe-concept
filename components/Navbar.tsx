@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/data";
 
@@ -39,17 +40,26 @@ export default function Navbar() {
       >
         <div className="max-w-screen-xl mx-auto px-6 md:px-10 h-[68px] flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex flex-col gap-0.5 leading-none" onClick={() => setMobileOpen(false)}>
-            <span
-              className={`font-sans font-bold text-[15px] tracking-[0.2em] uppercase transition-colors duration-300 ${
-                isLight ? "text-dark" : "text-white"
-              }`}
-            >
-              LABBE CONCEPT
-            </span>
-            <span className="font-serif italic text-[12px] text-caramel">
-              Fermetures & Aménagements
-            </span>
+          <Link href="/" className="flex items-center gap-[10px]" onClick={() => setMobileOpen(false)}>
+            <Image
+              src="/logo.png"
+              width={40}
+              height={40}
+              alt="Labbe Concept"
+              className="object-contain"
+            />
+            <div className="flex flex-col gap-0.5 leading-none">
+              <span
+                className={`font-sans font-bold text-[16px] tracking-[0.2em] uppercase transition-colors duration-300 ${
+                  isLight ? "text-dark" : "text-white"
+                }`}
+              >
+                LABBE CONCEPT
+              </span>
+              <span className="font-serif italic text-[12px] text-caramel">
+                Fermetures & Aménagements
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
@@ -61,10 +71,10 @@ export default function Navbar() {
               onMouseLeave={() => setServicesOpen(false)}
             >
               <button
-                className={`text-[13px] font-sans transition-colors duration-300 cursor-pointer ${
+                className={`text-[13px] font-sans transition-colors duration-200 cursor-pointer ${
                   isLight
-                    ? "text-dark hover:text-caramel"
-                    : "text-white/90 hover:text-white"
+                    ? "text-dark hover:text-warm-green"
+                    : "text-white/90 hover:text-warm-green"
                 }`}
               >
                 Services
@@ -98,10 +108,10 @@ export default function Navbar() {
 
             <Link
               href="/realisations"
-              className={`text-[13px] font-sans transition-colors duration-300 ${
+              className={`text-[13px] font-sans transition-colors duration-200 ${
                 isLight
-                  ? "text-dark hover:text-caramel"
-                  : "text-white/90 hover:text-white"
+                  ? "text-dark hover:text-warm-green"
+                  : "text-white/90 hover:text-warm-green"
               }`}
             >
               Réalisations
@@ -109,10 +119,10 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className={`text-[13px] font-sans transition-colors duration-300 ${
+              className={`text-[13px] font-sans transition-colors duration-200 ${
                 isLight
-                  ? "text-dark hover:text-caramel"
-                  : "text-white/90 hover:text-white"
+                  ? "text-dark hover:text-warm-green"
+                  : "text-white/90 hover:text-warm-green"
               }`}
             >
               Contact
