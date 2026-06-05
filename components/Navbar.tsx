@@ -3,9 +3,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { SERVICES } from "@/lib/data";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
+
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -16,7 +20,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
@@ -24,23 +27,24 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
-  const isLight = scrolled || mobileOpen;
+  // On homepage: transparent until scrolled. On all other pages: always light.
+  const isLight = !isHomepage || scrolled || mobileOpen;
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isLight
-            ? "bg-white"
-            : "bg-transparent"
+          isLight ? "bg-white" : "bg-transparent"
         }`}
-        style={{
-          boxShadow: isLight ? "0 1px 0 #d7c8b3" : "none",
-        }}
+        style={{ boxShadow: isLight ? "0 1px 0 #d7c8b3" : "none" }}
       >
         <div className="max-w-screen-xl mx-auto px-6 md:px-10 h-[68px] flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-[10px]" onClick={() => setMobileOpen(false)}>
+          <Link
+            href="/"
+            className="flex items-center gap-[10px]"
+            onClick={() => setMobileOpen(false)}
+          >
             <Image
               src="/logo.png"
               width={40}
@@ -71,7 +75,7 @@ export default function Navbar() {
               onMouseLeave={() => setServicesOpen(false)}
             >
               <button
-                className={`text-[13px] font-sans transition-colors duration-200 cursor-pointer ${
+                className={`text-[15px] font-sans transition-colors duration-200 cursor-pointer ${
                   isLight
                     ? "text-dark hover:text-warm-green"
                     : "text-white/90 hover:text-warm-green"
@@ -108,7 +112,7 @@ export default function Navbar() {
 
             <Link
               href="/realisations"
-              className={`text-[13px] font-sans transition-colors duration-200 ${
+              className={`text-[15px] font-sans transition-colors duration-200 ${
                 isLight
                   ? "text-dark hover:text-warm-green"
                   : "text-white/90 hover:text-warm-green"
@@ -119,7 +123,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className={`text-[13px] font-sans transition-colors duration-200 ${
+              className={`text-[15px] font-sans transition-colors duration-200 ${
                 isLight
                   ? "text-dark hover:text-warm-green"
                   : "text-white/90 hover:text-warm-green"
@@ -130,8 +134,8 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="btn-caramel !text-[12px] !py-2.5 !px-5"
-              style={{ letterSpacing: "0.08em" }}
+              className="btn-caramel !text-[14px] !py-3 !px-6"
+              style={{ letterSpacing: "0.06em" }}
             >
               Devis gratuit
             </Link>

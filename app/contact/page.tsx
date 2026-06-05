@@ -3,13 +3,32 @@
 import { useState } from "react";
 import { SERVICES } from "@/lib/data";
 
-export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
+type FormState = "idle" | "submitting" | "success" | "error";
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+export default function ContactPage() {
+  const [formState, setFormState] = useState<FormState>("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Placeholder: wire up to a real form handler (Resend, Formspree, etc.)
-    setSubmitted(true);
+    setFormState("submitting");
+
+    const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+    const data = new FormData(e.currentTarget);
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${formId}`, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setFormState("success");
+      } else {
+        setFormState("error");
+      }
+    } catch {
+      setFormState("error");
+    }
   }
 
   return (
@@ -85,7 +104,7 @@ export default function ContactPage() {
 
             {/* Right: form */}
             <div>
-              {submitted ? (
+              {formState === "success" ? (
                 <div className="py-16 text-center">
                   <p className="eyebrow mb-4">Message envoyé</p>
                   <h2
@@ -94,9 +113,11 @@ export default function ContactPage() {
                   >
                     Merci pour votre message.
                   </h2>
-                  <p className="font-sans text-[15px] text-dark/60 leading-relaxed max-w-sm mx-auto">
-                    Je vous réponds dans les 48&nbsp;heures. En cas d&apos;urgence,
-                    appelez le 06&nbsp;61&nbsp;70&nbsp;63&nbsp;44.
+                  <p
+                    className="font-sans text-[15px] leading-relaxed max-w-sm mx-auto"
+                    style={{ color: "#5e7b4a" }}
+                  >
+                    Votre demande a bien été envoyée, je vous réponds sous 48h.
                   </p>
                 </div>
               ) : (
@@ -199,11 +220,18 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {formState === "error" && (
+                    <p className="font-sans text-[13px]" style={{ color: "#c0392b" }}>
+                      Une erreur est survenue. Veuillez réessayer ou nous contacter directement par téléphone.
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="btn-caramel mt-2 text-center"
+                    disabled={formState === "submitting"}
+                    className="btn-caramel mt-2 text-center disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Envoyer ma demande
+                    {formState === "submitting" ? "Envoi en cours…" : "Envoyer ma demande"}
                   </button>
 
                   <p className="font-sans text-[11px] text-dark/40 text-center">
