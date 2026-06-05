@@ -5,12 +5,13 @@ export default function PageIntro() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    document.documentElement.style.visibility = "visible";
-
     const done = sessionStorage.getItem("lc_intro_done");
-    if (done) return;
 
-    document.documentElement.style.visibility = "hidden";
+    if (done) {
+      document.documentElement.style.visibility = "visible";
+      return;
+    }
+
     setShow(true);
 
     const timer = setTimeout(() => {
