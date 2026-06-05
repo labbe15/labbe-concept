@@ -60,7 +60,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{if(!sessionStorage.getItem('lc_intro_done')){document.documentElement.style.visibility='hidden';}}catch(e){}})();`,
+            __html: `(function(){try{if(!sessionStorage.getItem('lc_intro_done')){document.documentElement.style.visibility='hidden';}}catch(e){document.documentElement.style.visibility='visible';}})();`,
           }}
         />
         <script
