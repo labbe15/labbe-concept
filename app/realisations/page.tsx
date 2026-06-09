@@ -25,7 +25,7 @@ const PROJECTS = [
     year: "2024",
     service: "Fenêtres & Portes",
     description:
-      "Remplacement complet des châssis d'un pavillon des années 80. Pose de fenêtres aluminium Schüco AWS 75 en triple vitrage (Ug=0.7), amélioration du DPE de E à B. L'intervention a duré 3 jours pour 14 ouvertures. Finitions intérieures et extérieures soignées, seuils aluminium anodisé bronze.",
+      "Remplacement complet des châssis d'un pavillon des années 80. Pose de fenêtres aluminium en triple vitrage, amélioration énergétique notable du logement. L'intervention a duré 3 jours pour 14 ouvertures. Finitions intérieures et extérieures soignées, seuils aluminium anodisé bronze.",
   },
   {
     type: "cinematic",

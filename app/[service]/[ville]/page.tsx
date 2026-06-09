@@ -26,6 +26,35 @@ export async function generateMetadata({
   return generateLocalMetadata(service, ville);
 }
 
+function introVariation(
+  v: "A" | "B" | "C" | "D",
+  shortName: string,
+  villeName: string
+): { p1: string; p2: string } {
+  switch (v) {
+    case "A":
+      return {
+        p1: `Vous recherchez un artisan pour vos travaux de ${shortName} à ${villeName} ? Labbe Concept, entreprise artisanale indépendante basée à Cahuzac-sur-Vère dans le Tarn, intervient régulièrement à ${villeName} et dans les communes environnantes pour l'ensemble de vos projets de fermetures et d'aménagements extérieurs.`,
+        p2: `Valentin Labbé, menuisier poseur depuis 15 ans, réalise vos chantiers de ${shortName} avec le même niveau d'exigence à ${villeName} qu'ailleurs dans le département. Chaque intervention débute par un rendez-vous de diagnostic gratuit sur place — relevé de cotes, analyse des contraintes techniques, conseil sur les matériaux et les gammes les mieux adaptées à votre projet et à votre budget.`,
+      };
+    case "B":
+      return {
+        p1: `Votre projet de ${shortName} à ${villeName} mérite un artisan de confiance. Labbe Concept est une entreprise artisanale indépendante du Tarn, établie à Cahuzac-sur-Vère, qui réalise des chantiers de fermetures et d'aménagements extérieurs dans toute la région.`,
+        p2: `Avec 15 ans d'expérience dans la pose, Valentin Labbé intervient à ${villeName} pour tous vos travaux de ${shortName}. Avant chaque devis, un rendez-vous de diagnostic est proposé gratuitement : mesures sur place, étude des contraintes et recommandations personnalisées selon votre projet et votre budget.`,
+      };
+    case "C":
+      return {
+        p1: `Labbe Concept intervient à ${villeName} pour tous vos projets de ${shortName}. Artisan menuisier poseur indépendant basé dans le Tarn, à Cahuzac-sur-Vère, Valentin Labbé accompagne ses clients dans le secteur de ${villeName} pour l'ensemble de leurs travaux de fermetures et d'aménagements extérieurs.`,
+        p2: `Fort de 15 ans de pratique sur le terrain, il réalise chaque chantier de ${shortName} à ${villeName} avec rigueur et précision. Un premier rendez-vous gratuit est systématiquement proposé pour relever les cotes, identifier les contraintes techniques et vous conseiller sur les solutions les mieux adaptées à votre situation.`,
+      };
+    case "D":
+      return {
+        p1: `Vous avez un projet de ${shortName} à ${villeName} ? Labbe Concept, artisan menuisier poseur basé à Cahuzac-sur-Vère dans le Tarn, se déplace à ${villeName} et dans les communes alentour pour prendre en charge vos chantiers de fermetures et d'aménagements extérieurs.`,
+        p2: `Valentin Labbé met 15 ans d'expérience au service de vos projets de ${shortName} à ${villeName}. Chaque réalisation commence par un diagnostic gratuit à domicile : relevé de cotes, analyse des contraintes du bâti et recommandations sur les matériaux et les gammes correspondant à vos attentes et à votre enveloppe budgétaire.`,
+      };
+  }
+}
+
 export default async function LocalPage({ params }: { params: Params }) {
   const { service: serviceSlug, ville: villeSlug } = await params;
 
@@ -35,6 +64,10 @@ export default async function LocalPage({ params }: { params: Params }) {
   if (!service || !ville) notFound();
 
   const nearbyCities = VILLES.filter((v) => v.slug !== ville.slug).slice(0, 6);
+
+  const villeIndex = VILLES.findIndex((v) => v.slug === villeSlug);
+  const varKey = villeIndex <= 2 ? "A" : villeIndex <= 5 ? "B" : villeIndex <= 8 ? "C" : "D";
+  const intro = introVariation(varKey, service.shortName, ville.name);
 
   const schemaOrg = {
     "@context": "https://schema.org",
@@ -162,23 +195,8 @@ export default async function LocalPage({ params }: { params: Params }) {
             </h2>
 
             <div className="font-sans text-[15px] text-dark/80 leading-[1.85] space-y-5">
-              <p>
-                Vous recherchez un artisan pour vos travaux de{" "}
-                {service.shortName} à {ville.name}&nbsp;? Labbe Concept,
-                entreprise artisanale indépendante basée à Cahuzac-sur-Vère dans
-                le Tarn, intervient régulièrement à {ville.name} et dans les
-                communes environnantes pour l&apos;ensemble de vos projets de
-                fermetures et d&apos;aménagements extérieurs.
-              </p>
-              <p>
-                Valentin Labbé, menuisier poseur depuis 2009, réalise vos
-                chantiers de {service.shortName} avec le même niveau
-                d&apos;exigence à {ville.name} qu&apos;ailleurs dans le
-                département. Chaque intervention débute par un rendez-vous de
-                diagnostic gratuit sur place — relevé de cotes, analyse des
-                contraintes techniques, conseil sur les matériaux et les gammes
-                les mieux adaptées à votre projet et à votre budget.
-              </p>
+              <p>{intro.p1}</p>
+              <p>{intro.p2}</p>
               <p>
                 {service.description} À {ville.name}, les contraintes
                 climatiques du Tarn — ensoleillement intense en été, vents

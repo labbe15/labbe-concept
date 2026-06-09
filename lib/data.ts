@@ -101,7 +101,7 @@ export const SERVICES: Service[] = [
       ],
       materialsTitle: "Matériaux & Motorisations",
       materialsBody:
-        "Portails aluminium extrudé, acier galvanisé et thermolaqué, PVC. Toutes teintes RAL. Modèles contemporains, classiques, à barreaux ou à lames pleines. Motorisations de fabricants de référence. Interphones vidéo, digicode, badge RFID. Clôtures rigides, ajourées, grillage torsadé. Piliers béton ou maçonnés sur demande.",
+        "Portails aluminium extrudé, acier galvanisé et thermolaqué, PVC. Toutes teintes RAL. Modèles contemporains, classiques, à barreaux ou à lames pleines. Motorisations de fabricants de référence. Interphones vidéo, digicode, badge RFID. Clôtures rigides, ajourées, grillage torsadé. Poteaux aluminium sur demande.",
     },
   },
   {
@@ -117,7 +117,7 @@ export const SERVICES: Service[] = [
         "Un escalier est le pivot de la verticalité d'une maison. Il structure l'espace, révèle le caractère de l'intérieur et doit tenir ses promesses pendant des décennies. Labbe Concept conçoit et pose des escaliers sur mesure en bois massif, métal ou mixte, avec garde-corps aluminium ou inox.",
       section2Title: "Conception sur mesure, structure durable",
       paragraphs: [
-        "Chaque escalier commence par un relevé précis de la trémie, du plancher haut et des contraintes architecturales. Limon central ou double limon, marches droites ou balancées, quart tournant ou deux-quarts — chaque configuration est étudiée pour optimiser le confort de montée et l'emprise au sol. Je collabore avec des menuisiers agenceurs locaux pour la réalisation des éléments bois.",
+        "Chaque escalier commence par un relevé précis de la trémie, du plancher haut et des contraintes architecturales. Limon central ou double limon, marches droites ou balancées, quart tournant ou deux-quarts — chaque configuration est étudiée pour optimiser le confort de montée et l'emprise au sol. Chaque escalier est réalisé en partenariat avec des ébénistes locaux sélectionnés pour leur savoir-faire.",
         "Le bois massif apporte une chaleur incomparable. Chêne, hêtre, pin sylvestre ou frêne — chaque essence a ses qualités et sa palette de teintes après finition. Le métal lacépique ou brut de forge peut être associé au bois pour un résultat industriel ou contemporain. Les marches en verre trempé feuilleté sont disponibles pour les intérieurs très lumineux.",
         "Le garde-corps est l'élément de sécurité mais aussi l'accessoire décoratif de l'escalier. Je propose des rampes en aluminium anodisé, en inox brossé ou en verre feuilleté avec main-courante bois ou inox. Chaque modèle est conforme aux normes NF P01-012 et P01-013 pour les ERP et habitations privées.",
       ],
@@ -140,7 +140,7 @@ export const SERVICES: Service[] = [
       section2Title: "Confort, isolation et sécurité",
       paragraphs: [
         "La porte sectionnelle est aujourd'hui la référence technique : ses panneaux articulés s'escamotent parfaitement au plafond du garage, sans empiéter sur l'allée d'accès. Son joint périphérique assure une étanchéité irréprochable aux intempéries et aux insectes. Les modèles double paroi remplis de mousse polyuréthane atteignent Ud ≤ 1,1 W/m².K — un gain thermique significatif pour un garage chauffé ou mitoyen à la maison.",
-        "La motorisation est systématiquement incluse dans mes devis, car son coût à la pose est marginal comparé à une installation ultérieure. Je monte des motorisations de fabricants de référence qui résistent à 10 000 cycles d'utilisation minimum. L'application smartphone permet d'ouvrir ou fermer à distance, de consulter l'historique d'accès et de gérer les accès de votre famille.",
+        "La motorisation est systématiquement incluse dans mes devis, car son coût à la pose est marginal comparé à une installation ultérieure. Je monte des motorisations haute durée de vie, garanties plusieurs années par le fabricant. L'application smartphone permet d'ouvrir ou fermer à distance, de consulter l'historique d'accès et de gérer les accès de votre famille.",
         "Pour les ouvertures non standard — très larges, très hautes, ou dans des garages avec plafond bas — la porte enroulable ou basculante offre des solutions adaptées. Chaque relevé de cotes est effectué sur place avant chiffrage pour éviter les mauvaises surprises lors de la pose.",
       ],
       materialsTitle: "Gammes & Options",
@@ -163,7 +163,7 @@ export const SERVICES: Service[] = [
       paragraphs: [
         "La structure portante est ce que personne ne voit, mais qui conditionne tout. Solivage bois traité classe 4 ou aluminium, ancrages inox sur plots réglables ou sur dalle béton, espacement des lambourdes calculé en fonction des essences choisies et des charges d'usage — chaque détail compte pour obtenir une terrasse stable, sans fléchissement ni bruit de craquement après quelques étés.",
         "Le choix de l'essence est une question d'esthétique, de budget et d'entretien. Le pin sylvestre traité autoclave classe 4 est économique et accepte bien les finitions teintées. L'ipé et le cumaru sont des bois exotiques d'une densité exceptionnelle qui vieillissent en grisaillant naturellement sans entretien. L'ensemble de nos bois exotiques provient de filières certifiées PEFC ou FSC, garantissant une exploitation forestière responsable. Le composite à base de fibres de bois et de PVC recyclé offre la durabilité maximale avec le moins d'entretien.",
-        "Les finitions font la différence entre une terrasse ordinaire et une terrasse premium. Lames à clipser pour un rendu sans vis apparent, profils de rive en aluminium anodisé, margelles de piscine biseautées, jonctions avec seuil de porte traités dans les règles — autant de détails que je soigne sur chaque chantier pour un résultat impeccable et durable.",
+        "Les finitions font la différence entre une terrasse ordinaire et une terrasse premium. Lames à clipser pour un rendu sans vis apparent, profils de rive en aluminium anodisé, margelles de piscine biseautées, raccordements de seuil soignés — autant de détails que je soigne sur chaque chantier pour un résultat impeccable et durable.",
       ],
       materialsTitle: "Essences & Structures",
       materialsBody:
@@ -185,7 +185,7 @@ export const SERVICES: Service[] = [
       paragraphs: [
         "Les motorisations que je pose sont sélectionnées parmi les fabricants de référence du secteur. Depuis les moteurs de volets roulants jusqu'aux systèmes de contrôle centralisés, l'écosystème est cohérent, fiable et interopérable avec les assistants vocaux du marché (Amazon Alexa, Google Home, Apple HomeKit). J'interviens sur l'ensemble du département du Tarn.",
         "La motorisation d'un portail existant est souvent une opération d'une demi-journée. Un vérin ou un moteur bras est installé sur les vantaux, une armoire électrique est posée en limite de propriété, et la mise en service est effectuée avant mon départ de chantier. Je programme les télécommandes, teste les sécurités et vous forme à l'utilisation.",
-        "L'intégration domotique avancée permet de créer des scénarios : fermeture automatique des volets au coucher du soleil, ouverture du portail lors du déverrouillage de votre voiture, simulation de présence en vacances. Ces automatisations sont accessibles via une simple application et ne nécessitent aucune compétence technique particulière.",
+        "L'intégration domotique avancée permet de créer des scénarios : fermeture automatique des volets au coucher du soleil, ouverture du portail lors du déverrouillage de votre voiture, programmation automatique de vos équipements en votre absence. Ces automatisations sont accessibles via une simple application et ne nécessitent aucune compétence technique particulière.",
       ],
       materialsTitle: "Marques & Systèmes",
       materialsBody:
