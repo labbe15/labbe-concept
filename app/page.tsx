@@ -35,20 +35,24 @@ export default function Home() {
     }catch(e){}
   ` }} />
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.png" width={100} height={100}
+        <img src="/logo.png" width={140} height={140}
           style={{ objectFit: "contain" }} alt="" />
         <div style={{ textAlign: "center" }}>
           <div style={{
             fontFamily: "'DM Sans',sans-serif",
-            fontSize: "28px", fontWeight: 700,
+            fontSize: "36px", fontWeight: 700,
             color: "#5a5c51", letterSpacing: "0.1em",
             textTransform: "uppercase",
           }}>LABBE CONCEPT</div>
           <div style={{
             fontFamily: "'DM Serif Display',serif",
-            fontStyle: "italic", fontSize: "16px",
+            fontStyle: "italic", fontSize: "18px",
             color: "#c9924f", marginTop: "8px",
           }}>Fermetures &amp; Aménagements</div>
+          <div style={{
+            width: '40px', height: '1px',
+            background: '#c9924f', margin: '12px auto 0',
+          }} />
         </div>
       </div>
 

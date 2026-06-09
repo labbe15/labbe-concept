@@ -21,7 +21,7 @@ export const SERVICES: Service[] = [
     name: "Fenêtres & Portes",
     shortName: "fenêtres et portes",
     description:
-      "PVC, aluminium, mixte bois-alu. Pose neuve ou remplacement. Mono, double ou triple vitrage selon vos besoins thermiques et acoustiques.",
+      "PVC, aluminium, mixte bois-alu. Pose neuve ou remplacement. Double ou triple vitrage selon vos besoins thermiques et acoustiques.",
     heroImage:
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=85",
     content: {
@@ -30,12 +30,12 @@ export const SERVICES: Service[] = [
       section2Title: "L'excellence thermique et acoustique",
       paragraphs: [
         "Le choix du matériau détermine l'esthétique autant que les performances. Le PVC offre une isolation thermique remarquable pour un rapport qualité-prix imbattable. L'aluminium séduit par sa finesse de profil, sa robustesse et sa palette de teintes RAL quasi-illimitée. Le mixte bois-aluminium combine la chaleur naturelle du bois côté intérieur avec la résistance de l'aluminium face aux intempéries.",
-        "Le vitrage est le cœur thermique de la fenêtre. Je travaille principalement avec du double vitrage à faible émissivité (Ug ≤ 1,1 W/m².K) et du triple vitrage pour les expositions nord ou les projets BBC. Chaque vitrage est sélectionné en fonction de l'orientation de la pièce, de l'altitude et des objectifs de performance énergétique — conformément aux exigences de la RE2020.",
+        "Le vitrage est le cœur thermique de la fenêtre. Je travaille principalement avec du double vitrage à faible émissivité (Ug ≤ 1,1 W/m².K) et du triple vitrage pour les expositions nord ou les projets BBC. Chaque vitrage est sélectionné en fonction de l'orientation de la pièce, de l'altitude et des objectifs de performance énergétique — conformément aux exigences de la réglementation thermique en vigueur.",
         "De la dépose soigneuse de l'ancien châssis à la mise en œuvre des mousse expansive et joints d'étanchéité, chaque étape de la pose conditionne les performances finales. Je prends en charge l'ensemble du chantier : dépose, calfeutrement, pose, finitions intérieures et extérieures. Votre intérieur est laissé propre et net à chaque fin de journée.",
       ],
       materialsTitle: "Matériaux & Finitions",
       materialsBody:
-        "PVC blanc, couleur ou bois-imitation. Aluminium laqué toutes teintes RAL — thermolaqué ou anodisé. Mixte bois-alu en chêne, pin ou épicéa. Vitrages feuilletés, décoratifs, anti-effraction jusqu'au niveau P4. Quincailleries Winkhaus et Roto. Références : Rehau, Schüco, Aliplast.",
+        "PVC blanc, couleur ou bois-imitation. Aluminium laqué toutes teintes RAL — thermolaqué ou anodisé. Mixte bois-alu en chêne, pin ou épicéa. Vitrages feuilletés, décoratifs, anti-effraction jusqu'au niveau P4.",
     },
   },
   {
@@ -52,12 +52,12 @@ export const SERVICES: Service[] = [
       section2Title: "Protection solaire et intimité maîtrisées",
       paragraphs: [
         "Le volet battant reste la référence esthétique dans l'habitat traditionnel du Tarn. Je les pose en aluminium thermolaqué, quasi-sans entretien, ou en PVC pour les budgets maîtrisés. Chaque paire est posée avec des gonds réglables et des systèmes d'arrêt qui résistent aux vents violents du Midi — une réalité à ne pas négliger en Occitanie.",
-        "Le volet roulant motorisé offre le confort absolu : une touche de télécommande ou une application smartphone suffit à obscurcir une pièce ou à réduire la surchauffe estivale. Je travaille avec les motorisations Somfy et Nice, reconnues pour leur fiabilité et leur écosystème domotique. L'intégration dans une installation existante est toujours possible en rénovation.",
+        "Le volet roulant motorisé offre le confort absolu : une touche de télécommande ou une application smartphone suffit à obscurcir une pièce ou à réduire la surchauffe estivale. Je travaille avec des motorisations reconnues pour leur fiabilité et leur écosystème domotique. L'intégration dans une installation existante est toujours possible en rénovation.",
         "Le store à bandes orientables (BSO) est la solution haut de gamme pour les façades vitrées exposées sud ou ouest. Il tamise la lumière sans la bloquer totalement, réduit la surchauffe en été et protège de la pluie. En aluminium laqué, il vieillit sans entretien et s'harmonise avec toutes les façades contemporaines.",
       ],
       materialsTitle: "Gammes & Motorisations",
       materialsBody:
-        "Volets battants aluminium et PVC, toutes teintes RAL. Volets roulants aluminium ou PVC avec coffre rénovation ou neuf. BSO lames 80mm orientables. Motorisations Somfy, Nice, Came. Télécommandes, timer, capteur solaire et vent, intégration Tahoma et Home By Somfy. Normes NF EN 13659.",
+        "Volets battants aluminium et PVC, toutes teintes RAL. Volets roulants aluminium ou PVC avec coffre rénovation ou neuf. BSO lames 80mm orientables. Motorisations de fabricants de référence. Télécommandes, timer, capteur solaire et vent, intégration domotique. Normes NF EN 13659.",
     },
   },
   {
@@ -96,12 +96,12 @@ export const SERVICES: Service[] = [
       section2Title: "Sécurité, esthétique et confort d'accès",
       paragraphs: [
         "L'aluminium s'est imposé comme le matériau de référence pour les portails modernes. Léger, rigide, insensible à la corrosion et disponible dans toutes les teintes RAL, il offre des designs épurés contemporains comme des imitations bois très convaincantes. Les lames peuvent être ajourées pour laisser passer la lumière ou pleines pour préserver l'intimité.",
-        "La motorisation n'est plus un luxe mais une évidence. Je monte principalement des motorisations CAME, BFT et Somfy, reconnues pour leur robustesse dans les conditions difficiles. Télécommande, badge de proximité, interphone vidéo, ouverture à distance par application — toutes les options sont disponibles et peuvent évoluer avec le temps.",
+        "La motorisation n'est plus un luxe mais une évidence. Je monte principalement des motorisations reconnues pour leur robustesse dans les conditions difficiles. Télécommande, badge de proximité, interphone vidéo, ouverture à distance par application — toutes les options sont disponibles et peuvent évoluer avec le temps.",
         "La clôture doit être cohérente avec le portail, le style de la maison et les contraintes du terrain. Je pose des clôtures rigides en panneau soudé, des clôtures ajourées en aluminium ou des grillages torsadés en limite de propriété. Chaque projet est étudié en fonction des servitudes locales et du plan local d'urbanisme de votre commune.",
       ],
       materialsTitle: "Matériaux & Motorisations",
       materialsBody:
-        "Portails aluminium extrudé, acier galvanisé et thermolaqué, PVC. Toutes teintes RAL. Modèles contemporains, classiques, à barreaux ou à lames pleines. Motorisations CAME, BFT, Somfy. Interphones vidéo, digicode, badge RFID. Clôtures rigides, ajourées, grillage torsadé. Piliers béton ou maçonnés sur demande.",
+        "Portails aluminium extrudé, acier galvanisé et thermolaqué, PVC. Toutes teintes RAL. Modèles contemporains, classiques, à barreaux ou à lames pleines. Motorisations de fabricants de référence. Interphones vidéo, digicode, badge RFID. Clôtures rigides, ajourées, grillage torsadé. Piliers béton ou maçonnés sur demande.",
     },
   },
   {
@@ -140,12 +140,12 @@ export const SERVICES: Service[] = [
       section2Title: "Confort, isolation et sécurité",
       paragraphs: [
         "La porte sectionnelle est aujourd'hui la référence technique : ses panneaux articulés s'escamotent parfaitement au plafond du garage, sans empiéter sur l'allée d'accès. Son joint périphérique assure une étanchéité irréprochable aux intempéries et aux insectes. Les modèles double paroi remplis de mousse polyuréthane atteignent Ud ≤ 1,1 W/m².K — un gain thermique significatif pour un garage chauffé ou mitoyen à la maison.",
-        "La motorisation est systématiquement incluse dans mes devis, car son coût à la pose est marginal comparé à une installation ultérieure. Je monte des motorisations Somfy, CAME et Hormann qui résistent à 10 000 cycles d'utilisation minimum. L'application smartphone permet d'ouvrir ou fermer à distance, de consulter l'historique d'accès et de gérer les accès de votre famille.",
+        "La motorisation est systématiquement incluse dans mes devis, car son coût à la pose est marginal comparé à une installation ultérieure. Je monte des motorisations de fabricants de référence qui résistent à 10 000 cycles d'utilisation minimum. L'application smartphone permet d'ouvrir ou fermer à distance, de consulter l'historique d'accès et de gérer les accès de votre famille.",
         "Pour les ouvertures non standard — très larges, très hautes, ou dans des garages avec plafond bas — la porte enroulable ou basculante offre des solutions adaptées. Chaque relevé de cotes est effectué sur place avant chiffrage pour éviter les mauvaises surprises lors de la pose.",
       ],
       materialsTitle: "Gammes & Options",
       materialsBody:
-        "Portes sectionnelles acier double paroi, aluminium nervuré, PVC. Motifs : lisse, rainuré, vitré. Toutes teintes RAL. Motorisations Somfy, CAME, Hormann. Télécommande, clavier mural, application smartphone. Système anti-pincement des doigts. Serrure mécanique et électromécanique. Hublots en verre feuilleté sur demande.",
+        "Portes sectionnelles acier double paroi, aluminium nervuré, PVC. Motifs : lisse, rainuré, vitré. Toutes teintes RAL. Motorisations de fabricants de référence. Télécommande, clavier mural, application smartphone. Système anti-pincement des doigts. Serrure mécanique et électromécanique. Hublots en verre feuilleté sur demande.",
     },
   },
   {
@@ -175,7 +175,7 @@ export const SERVICES: Service[] = [
     name: "Automatismes",
     shortName: "automatismes",
     description:
-      "Motorisation de portails, volets, portes de garage. Intégration domotique. Marques Somfy, Nice, Came.",
+      "Motorisation de portails, volets, portes de garage. Intégration domotique. Motorisations reconnues.",
     heroImage:
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=85",
     content: {
@@ -183,13 +183,13 @@ export const SERVICES: Service[] = [
         "L'automatisation d'une maison ne nécessite pas de partir de zéro. En rénovation comme en neuf, il est possible de motoriser portail, volets et porte de garage existants pour obtenir un confort d'utilisation quotidien et une gestion à distance depuis n'importe où dans le monde.",
       section2Title: "La maison connectée, sans la complexité",
       paragraphs: [
-        "Somfy est la référence mondiale de la motorisation de fermetures. Depuis les moteurs de volets roulants jusqu'aux systèmes de contrôle centralisés Tahoma et Home By Somfy, l'écosystème est cohérent, fiable et interopérable avec Amazon Alexa, Google Home et Apple HomeKit. Je suis revendeur et installateur agréé Somfy dans le Tarn.",
+        "Les motorisations que je pose sont sélectionnées parmi les fabricants de référence du secteur. Depuis les moteurs de volets roulants jusqu'aux systèmes de contrôle centralisés, l'écosystème est cohérent, fiable et interopérable avec les assistants vocaux du marché (Amazon Alexa, Google Home, Apple HomeKit). J'interviens sur l'ensemble du département du Tarn.",
         "La motorisation d'un portail existant est souvent une opération d'une demi-journée. Un vérin ou un moteur bras est installé sur les vantaux, une armoire électrique est posée en limite de propriété, et la mise en service est effectuée avant mon départ de chantier. Je programme les télécommandes, teste les sécurités et vous forme à l'utilisation.",
         "L'intégration domotique avancée permet de créer des scénarios : fermeture automatique des volets au coucher du soleil, ouverture du portail lors du déverrouillage de votre voiture, simulation de présence en vacances. Ces automatisations sont accessibles via une simple application et ne nécessitent aucune compétence technique particulière.",
       ],
       materialsTitle: "Marques & Systèmes",
       materialsBody:
-        "Motorisations Somfy, Nice, CAME, BFT. Gestion centralisée : Tahoma by Somfy, Home By Somfy. Compatibilité : Alexa, Google Home, Apple HomeKit. Capteurs : vent, pluie, ensoleillement. Alimentation secours sur batterie. Télécommande, badge RFID, interphone vidéo, clavier à code. SAV et dépannage sur l'ensemble du département.",
+        "Motorisations reconnues, sélectionnées parmi les fabricants de référence. Gestion centralisée : solutions domotiques connectées. Compatibilité : Alexa, Google Home, Apple HomeKit. Capteurs : vent, pluie, ensoleillement. Alimentation secours sur batterie. Télécommande, badge RFID, interphone vidéo, clavier à code. SAV et dépannage sur l'ensemble du département.",
     },
   },
 ];
