@@ -83,8 +83,8 @@ export default function Home() {
             className="font-serif text-white leading-[1.05] mb-4"
             style={{ fontSize: "clamp(48px, 7vw, 80px)" }}
           >
-            L&apos;habitat qu&apos;il{" "}
-            <em>mérite.</em>
+            Votre maison,{" "}
+            <em>sublimée.</em>
           </h1>
           <p
             className="font-sans mb-8 leading-relaxed"
@@ -92,7 +92,7 @@ export default function Home() {
           >
             Fermetures &amp; Aménagements
             <br />
-            sur mesure depuis 2009.
+            15 ans d&apos;expérience à votre service.
           </p>
           <Link href="/realisations" className="btn-ghost">
             Découvrir nos réalisations

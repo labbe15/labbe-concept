@@ -32,7 +32,7 @@ export default function Footer() {
               Artisan menuisier poseur indépendant basé dans le Tarn. Fenêtres,
               volets, pergolas, portails, escaliers, terrasses bois, portes de
               garage et automatismes — chaque chantier traité avec le même
-              niveau d&apos;exigence depuis 2009.
+              niveau d&apos;exigence.
             </p>
           </div>
 
