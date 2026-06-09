@@ -30,8 +30,9 @@ export default function Footer() {
             </div>
             <p className="font-sans text-[14px] leading-relaxed mt-4 max-w-[260px]">
               Artisan menuisier poseur indépendant basé dans le Tarn. Fenêtres,
-              volets, pergolas, portails et automatismes — chaque chantier
-              traité avec le même niveau d&apos;exigence depuis 2009.
+              volets, pergolas, portails, escaliers, terrasses bois, portes de
+              garage et automatismes — chaque chantier traité avec le même
+              niveau d&apos;exigence depuis 2009.
             </p>
           </div>
 

@@ -73,13 +73,13 @@ export const SERVICES: Service[] = [
         "La pergola bioclimatique est devenue l'extension naturelle du salon pour les maisons du Sud. Elle transforme une terrasse en véritable pièce à vivre à ciel ouvert, utilisable neuf mois sur douze grâce à ses lames orientables qui gèrent lumière, ventilation et protection. Labbe Concept conçoit et pose ces structures sur mesure dans tout le Tarn.",
       section2Title: "Un espace de vie au fil des saisons",
       paragraphs: [
-        "La pergola bioclimatique à lames aluminium orientables représente le summum du confort extérieur. Les lames pivotent de 0° à 135° pour moduler l'ensoleillement à la seconde, s'inclinent pour laisser passer la pluie en cas d'averse légère, et se ferment hermétiquement pour une protection totale. Capteur de pluie et anémomètre peuvent être intégrés pour une gestion automatique.",
+        "La pergola bioclimatique à lames aluminium orientables représente le summum du confort extérieur. Les lames pivotent de 0° à 135° selon les modèles pour moduler l'ensoleillement à la seconde, s'inclinent pour laisser passer la pluie en cas d'averse légère, et se ferment hermétiquement pour une protection totale. Capteur de pluie et anémomètre peuvent être intégrés pour une gestion automatique.",
         "La véranda est une architecture à part entière. Elle doit s'intégrer au bâti existant, respecter les règles d'urbanisme locales et offrir un confort thermique quatre saisons. Je propose des vérandas en aluminium thermolaqué avec vitrages isolants — toit en verre feuilleté ou en polycarbonate alvéolaire selon le budget et l'usage. Chaque projet fait l'objet d'un plan de conception avant signature.",
         "L'implantation est une science en elle-même dans notre région. L'exposition aux vents d'autan, l'ensoleillement estival et les pluies automnales guident le choix des matériaux et des orientations. Fort de 15 ans de pose dans le Tarn, je connais les contraintes locales et je peux anticiper les problèmes que vous ne soupçonnez pas encore.",
       ],
       materialsTitle: "Structures & Options",
       materialsBody:
-        "Pergolas aluminium extrudé, lames 120mm ou 150mm orientables motorisées. Structures autoportantes ou adossées. Éclairage LED intégré dans les lames et les poteaux. Stores zip ou rideaux enroulables sur les côtés. Gouttières intégrées dans les poteaux. Charge neige et vent calculée selon la zone climatique Tarn. Garantie 10 ans structure.",
+        "Pergolas aluminium extrudé, lames 200mm à 220mm orientables motorisées. Structures autoportantes ou adossées. Éclairage LED intégré dans les lames et les poteaux. Stores zip ou rideaux enroulables sur les côtés. Gouttières intégrées dans les poteaux. Charge neige et vent calculée selon la zone climatique Tarn. Garantie 10 ans structure.",
     },
   },
   {
@@ -123,7 +123,7 @@ export const SERVICES: Service[] = [
       ],
       materialsTitle: "Matériaux & Configurations",
       materialsBody:
-        "Structures bois massif : chêne, hêtre, pin, frêne. Structures métal : acier thermolaqué, inox. Mixte bois-métal. Marches bois, métal, verre feuilleté. Garde-corps aluminium, inox, verre. Rampes toutes dimensions. Hauteur marche 17-20cm, giron 28-32cm. Normes NF P01-012 et P01-013.",
+        "Structures bois massif : chêne, hêtre, pin, frêne. Structures métal : acier thermolaqué, inox. Mixte bois-métal. Marches bois, métal, verre feuilleté. Garde-corps aluminium, inox, verre. Rampes toutes dimensions. Hauteur marche 17-20cm, giron 28-32cm. Norme NF P01-012.",
     },
   },
   {
@@ -162,7 +162,7 @@ export const SERVICES: Service[] = [
       section2Title: "L'art de la terrasse bien posée",
       paragraphs: [
         "La structure portante est ce que personne ne voit, mais qui conditionne tout. Solivage bois traité classe 4 ou aluminium, ancrages inox sur plots réglables ou sur dalle béton, espacement des lambourdes calculé en fonction des essences choisies et des charges d'usage — chaque détail compte pour obtenir une terrasse stable, sans fléchissement ni bruit de craquement après quelques étés.",
-        "Le choix de l'essence est une question d'esthétique, de budget et d'entretien. Le pin sylvestre traité autoclave classe 4 est économique et accepte bien les finitions teintées. L'ipé et le cumaru sont des bois exotiques d'une densité exceptionnelle qui vieillissent en grisaillant naturellement sans entretien. Le composite à base de fibres de bois et de PVC recyclé offre la durabilité maximale avec le moins d'entretien.",
+        "Le choix de l'essence est une question d'esthétique, de budget et d'entretien. Le pin sylvestre traité autoclave classe 4 est économique et accepte bien les finitions teintées. L'ipé et le cumaru sont des bois exotiques d'une densité exceptionnelle qui vieillissent en grisaillant naturellement sans entretien. L'ensemble de nos bois exotiques provient de filières certifiées PEFC ou FSC, garantissant une exploitation forestière responsable. Le composite à base de fibres de bois et de PVC recyclé offre la durabilité maximale avec le moins d'entretien.",
         "Les finitions font la différence entre une terrasse ordinaire et une terrasse premium. Lames à clipser pour un rendu sans vis apparent, profils de rive en aluminium anodisé, margelles de piscine biseautées, jonctions avec seuil de porte traités dans les règles — autant de détails que je soigne sur chaque chantier pour un résultat impeccable et durable.",
       ],
       materialsTitle: "Essences & Structures",
